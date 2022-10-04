@@ -108,3 +108,5 @@ def evaluate(model, testdataloder):
             predict_all = np.append(predict_all, predic)
     acc = metrics.accuracy_score(labels_all, predict_all)
     return acc, loss_total / len(testdataloder)
+
+
